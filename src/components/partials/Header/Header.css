@@ -1,0 +1,119 @@
+header {
+  background-color: white;
+  height: 60px;
+  border-bottom: 1px solid #CCC;
+}
+
+header a {
+  color: black;
+  text-decoration: none;
+}
+
+.logo {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  min-height: 60px;
+}
+
+span {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.logo-o {
+  color: rgb(128, 40, 219)
+}
+
+.logo-l {
+  color: rgb(140, 229, 99);
+}
+
+.logo-x {
+  color: rgb(242, 128, 0)
+}
+
+nav {
+  padding: 10px 0;
+}
+
+nav ul {
+  display: flex;
+  height: 40px;
+  align-items: center;
+}
+
+nav ul,
+nav ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.menu-opener {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 60px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.menu-opener img {
+  width: 30px;
+  height: 30px;
+}
+
+.opened {
+  display: block;
+}
+
+.link-button {
+  background-color:rgb(128, 40, 219);
+  border-radius: 4px;
+  padding: 5px 10px;
+  color: white;
+  font-weight: bold;
+  transition: all ease 0.3s;
+}
+
+.link-button:hover {
+  background-color: rgb(96, 22, 173);
+}
+
+@media (max-width: 600px) {
+
+  .menu-opener {
+    display: flex;
+  }
+
+  header {
+    height: auto;
+  }
+
+  header .container {
+    flex-direction: column;
+  }
+
+  nav {
+    display: none;
+  }
+
+  nav ul {
+    height: auto;
+    flex-direction: column
+  }
+
+  nav ul li {
+    margin: 15px;
+  }
+}
